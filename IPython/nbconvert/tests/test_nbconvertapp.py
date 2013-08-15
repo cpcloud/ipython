@@ -19,7 +19,6 @@ from .base import TestsBase
 
 import IPython.testing.tools as tt
 from IPython.testing import decorators as dec
-from IPython.external.decorators import knownfailureif
 
 
 #-----------------------------------------------------------------------------
@@ -130,7 +129,6 @@ class TestNbConvertApp(TestsBase):
                 assert "data:image/png;base64,b'" not in f.read()
 
     @dec.onlyif_cmds_exist('pandoc')
-    @knownfailureif(sys.version_info[0] >= 3, "nbconvert html conversion fails for .png images on Python3 ")
     def test_png_base64_html_ok(self):
         """Is embedded png data well formed in HTML?"""
         with self.create_temp_cwd(['notebook2.ipynb']):
