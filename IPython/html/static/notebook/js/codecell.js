@@ -101,6 +101,7 @@ var IPython = (function (IPython) {
             },
             mode: 'ipython',
             theme: 'ipython',
+            keyMap: 'vim',
             matchBrackets: true
         }
     };
