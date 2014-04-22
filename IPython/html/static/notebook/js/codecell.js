@@ -101,6 +101,7 @@ define([
                 "Ctrl-/" : "toggleComment"
             },
             mode: 'ipython',
+            keyMap: 'vim',
             theme: 'ipython',
             matchBrackets: true,
              // don't auto-close strings because of CodeMirror #2385
