@@ -76,6 +76,7 @@ define([
 
     Cell.options_default = {
         cm_config : {
+            keyMap: 'vim',
             indentUnit : 4,
             readOnly: false,
             theme: "default",
